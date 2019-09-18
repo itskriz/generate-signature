@@ -29,6 +29,10 @@
         $personDirect = '';
         $personExt = '';
 
+        if (isset($_POST['personName']) && !empty($_POST['personName']) ) {
+            $personName = $_POST['personName'];
+        }
+
         if (isset($_POST['personExt']) && !empty($_POST['personExt']) ) {
             $personExt = ' Ext. ' . $_POST['personExt'];
         }
