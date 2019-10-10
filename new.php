@@ -71,7 +71,7 @@
 			?>
 			PREVIEW
 			
-			<table id="signature" align='left' border='0' celpadding='0' celspacing='0' style='border-left: 2px solid #FF0000; font-family: sans-serif; color: #666666; font-size: 12px; border-collapse: collapse; border-spacing: 0; margin: 0; line-height: 1.2;' width='100%'>
+			<table id="signature" align='left' border='0' celpadding='0' celspacing='0' style='border-left: 2px solid #FF0000; font-family: sans-serif; color: #000000; font-size: 12px; border-collapse: collapse; border-spacing: 0; margin: 0; line-height: 1.2;' width='100%'>
 			  <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
 			    <td style='font-size: 14px; padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
 			      <strong style='font-weight: bold'><?php echo $person['name']; ?> <span style="margin-left: 5px; margin-right: 5px;">|</span></strong> <?php echo $person['title']; ?>

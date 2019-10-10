@@ -128,7 +128,7 @@
         <h3>Render</h3>
         <div class="py-4">
             <?php //echo $results; ?>
-            <table id="signature" align='left' border='0' celpadding='0' celspacing='0' style='border-left: 2px solid #FF0000; font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: 12px; border-collapse: collapse; border-spacing: 0; margin: 0; line-height: 1.2;' width='100%'>
+            <table id="signature" align='left' border='0' celpadding='0' celspacing='0' style='border-left: 2px solid #FF0000; font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 12px; border-collapse: collapse; border-spacing: 0; margin: 0; line-height: 1.2;' width='100%'>
               <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
                 <td style='font-size: 14px; padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <strong style='font-weight: bold'><?php echo $person['name']; ?> <span style="margin-left: 5px; margin-right: 5px;">|</span></strong> <?php echo $person['title']; ?>
@@ -191,14 +191,14 @@
                 </td>
               </tr>
               <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                <td style='color: #666666; font-size: 14px; padding-top: 0px; padding-bottom: 5px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+                <td style='color: #000000; font-size: 14px; padding-top: 0px; padding-bottom: 5px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <strong style='font-weight: bold'>An award-winning, digital-first, full-stack marketing agency</strong>
                 </td>
               </tr>
               <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
                 <td style='padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <a href='https://goo.gl/maps/cXBoP4UFcEK9r32C8' style='color: #007bff; text-decoration: none;' target='_blank' title='Find our offices on Google Maps'>
-                    55 Miracle Mile, Suite 330, Coral Gables FL 33134
+                    55 Miracle Mile, Suite 330, Coral Gables, FL 33134
                   </a>
                 </td>
               </tr>
@@ -300,9 +300,14 @@
                             color: '#' + Math.floor(Math.random()*16777215).toString(16),
                             backgroundColor: '#' + Math.floor(Math.random()*16777215).toString(16),
                             borderColor: '#' + Math.floor(Math.random()*16777215).toString(16),
-                            transition: 'all 500ms linear'
+                            transition: 'all 500ms linear',
+                            fontSize: Math.random() + 1 + 'em',
+                            transform: 'rotateX('+Math.floor(Math.random() * 360 + 1)+'deg) rotateY('+Math.floor(Math.random() * 360 + 1)+'deg) rotateZ('+Math.floor(Math.random() * 360 + 1)+'deg)'
                         })
                     });
+                    $('img').css({
+                        filter: 'hue-rotate('+Math.floor(Math.random() * 360) + 1+'deg)',
+                    })
                     $('body').css({
                         backgroundColor: '#' + Math.floor(Math.random()*16777215).toString(16),
                         transition: 'all 500ms linear'
