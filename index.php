@@ -186,7 +186,7 @@
               <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
                 <td style='padding-top: 5px; padding-bottom: 5px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <a href='https://roarmedia.com' style='text-decoration: none;' target='_blank' title='Go to: RoarMedia.com'>
-                    <img alt='Logo for Roar Media' height='70' src='http://roarmedia.com/wp-content/themes/roarmedia/assets/img/roarmedia_email-logo-10year.gif' style='display: block; border: none;' width='250'>
+                    <img alt='Logo for Roar Media' height='70' src='https://roarmedia.com/wp-content/themes/roarmedia/assets/img/roarmedia_email-logo-10year.gif' style='display: block; border: none;' width='250'>
                   </a>
                 </td>
               </tr>
@@ -215,17 +215,17 @@
                     <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
                       <td align='left' style='padding-right: 5px;  border-collapse: collapse; border-spacing: 0; margin: 0;'>
                         <a href='https://www.facebook.com/roarmedia11/' title='Visit our Facebook'>
-                          <img alt='' height='24' src='https://roarmedia.com/wp-content/uploads/2019/09/rmemailico-facebook.png' style='border: none;' width='24'>
+                          <img alt='' height='24' src='https://roarmedia.com/wp-content/uploads/2019/09/rmemailico-facebook.png' style='border: none;' width='24' alt="Icon for Facebook">
                         </a>
                       </td>
                       <td align='left' style='padding-right: 5px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                         <a href='https://www.instagram.com/roarmedia' title='Visit our Instagram'>
-                          <img alt='' height='24' src='https://roarmedia.com/wp-content/uploads/2019/09/rmemailico-instagram.png' style='border: none;' width='24'>
+                          <img alt='' height='24' src='https://roarmedia.com/wp-content/uploads/2019/09/rmemailico-instagram.png' style='border: none;' width='24' alt="Icon for Instagram">
                         </a>
                       </td>
                       <td align='left' style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
                         <a href='https://www.linkedin.com/company/roarmedia/' title='Visit our LinkedIn'>
-                          <img alt='' height='24' src='https://roarmedia.com/wp-content/uploads/2019/09/rmemailico-linkedin.png' style='border: none;' width='24'>
+                          <img alt='' height='24' src='https://roarmedia.com/wp-content/uploads/2019/09/rmemailico-linkedin.png' style='border: none;' width='24' alt="Icon for LinkedIn">
                         </a>
                       </td>
                     </tr>
