@@ -219,11 +219,6 @@
                         </a>
                       </td>
                       <td align='left' style='padding-right: 5px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                        <a href='https://twitter.com/roarmedia' title='Visit our Twitter'>
-                          <img alt='' height='24' src='https://roarmedia.com/wp-content/uploads/2019/09/rmemailico-twitter.png' style='border: none;' width='24'>
-                        </a>
-                      </td>
-                      <td align='left' style='padding-right: 5px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                         <a href='https://www.instagram.com/roarmedia' title='Visit our Instagram'>
                           <img alt='' height='24' src='https://roarmedia.com/wp-content/uploads/2019/09/rmemailico-instagram.png' style='border: none;' width='24'>
                         </a>
