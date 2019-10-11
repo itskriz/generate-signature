@@ -38,7 +38,7 @@
 
             if (isset($_POST['personDirect']) && !empty($_POST['personDirect'])) {
                 $person['direct'] = array(
-                    'href'          => 'tel:+1' . $_POST['direct'],
+                    'href'          => 'tel:+1' . $_POST['personDirect'],
                     'title'         => 'Call ' . $_POST['personName'] . ' directly.'
                 );
                 $telArray = str_split($_POST['personDirect']);
@@ -57,7 +57,7 @@
 
             if (isset($_POST['personMobile']) && !empty($_POST['personMobile'])) {
                 $person['mobile'] = array(
-                    'href'          => 'tel:+1' . $_POST['direct'],
+                    'href'          => 'tel:+1' . $_POST['personMobile'],
                     'title'         => 'Call ' . $_POST['personName'] . ' on mobile.'
                 );
                 $telArray = str_split($_POST['personMobile']);
@@ -128,14 +128,14 @@
         <h3>Render</h3>
         <div class="py-4">
             <?php //echo $results; ?>
-            <table id="signature" align='left' border='0' celpadding='0' celspacing='0' style='border-left: 2px solid #FF0000; font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 12px; border-collapse: collapse; border-spacing: 0; margin: 0; line-height: 1.2;' width='100%'>
-              <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                <td style='font-size: 14px; padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+            <table id="signature" align='left' border='0' cellpadding='0' cellspacing='0' style='border-left: 2px solid #FF0000; font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 12px; border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0; line-height: 1.2;' width='100%'>
+              <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; font-size: 14px; padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <strong style='font-weight: bold'><?php echo $person['name']; ?> <span style="margin-left: 5px; margin-right: 5px;">|</span></strong> <?php echo $person['title']; ?>
                 </td>
               </tr>
-              <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                <td style='padding-top: 0px; padding-bottom: 5px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+              <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; padding-top: 0px; padding-bottom: 5px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <a href='mailto:<?php echo $person['email']['href']; ?>' style='color: #007bff; text-decoration: none;' title='<?php echo $person['email']['title']; ?>'>
                     <?php echo $person['email']['content']; ?>
                   </a>
@@ -144,8 +144,8 @@
               <?php
                   if (isset($person['ext']) && !empty($person['ext'])) {
                     ?>
-                        <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                            <td style='padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+                        <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                            <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                               <strong style='font-weight: bold'>Main:</strong>
                               <a href='tel:+13054032080' style='color: #007bff; text-decoration: none;' title="Call <?php echo $person['name']; ?>'s office">
                                 (305) 403-2080 <?php echo $person['ext']; ?>
@@ -158,8 +158,8 @@
               <?php
                   if (isset($person['direct']) && !empty($person['direct'])) {
                     ?>
-                      <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                        <td style='padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+                      <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                        <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                           <strong style='font-weight: bold'>Direct:</strong>
                           <a href='<?php echo $person['direct']['href']; ?>' style='color: #007bff; text-decoration: none;' title='<?php echo $person['direct']['title']; ?>'>
                             <?php echo $person['direct']['content']; ?>
@@ -172,8 +172,8 @@
               <?php
                   if (isset($person['mobile']) && !empty($person['mobile'])) {
                     ?>
-                      <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                        <td style='padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+                      <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                        <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                           <strong style='font-weight: bold'>Mobile:</strong>
                           <a href='<?php echo $person['mobile']['href']; ?>' style='color: #007bff; text-decoration: none;' title='<?php echo $person['mobile']['title']; ?>'>
                             <?php echo $person['mobile']['content']; ?>
@@ -183,36 +183,36 @@
                     <?php
                   }
               ?>
-              <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                <td style='padding-top: 5px; padding-bottom: 5px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+              <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; padding-top: 5px; padding-bottom: 5px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <a href='https://roarmedia.com' style='text-decoration: none;' target='_blank' title='Go to: RoarMedia.com'>
                     <img alt='Logo for Roar Media' height='70' src='https://roarmedia.com/wp-content/themes/roarmedia/assets/img/roarmedia_email-logo-10year.gif' style='display: block; border: none;' width='250'>
                   </a>
                 </td>
               </tr>
-              <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                <td style='color: #000000; font-size: 14px; padding-top: 0px; padding-bottom: 5px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+              <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; color: #000000; font-size: 14px; padding-top: 0px; padding-bottom: 5px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <strong style='font-weight: bold'>An award-winning, digital-first, full-stack marketing agency</strong>
                 </td>
               </tr>
-              <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                <td style='padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+              <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <a href='https://goo.gl/maps/cXBoP4UFcEK9r32C8' style='color: #007bff; text-decoration: none;' target='_blank' title='Find our offices on Google Maps'>
                     55 Miracle Mile, Suite 330, Coral Gables, FL 33134
                   </a>
                 </td>
               </tr>
-              <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                <td style='padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
+              <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; padding-top: 0px; padding-bottom: 2px; padding-left: 8px; border-collapse: collapse; border-spacing: 0; margin: 0;'>
                   <a href='https://roarmedia.com' style='color: #007bff; text-decoration: none;' target='_blank' title='Go to: RoarMedia.com'>
                     RoarMedia.com
                   </a>
                 </td>
               </tr>
-              <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                <td style='padding-top: 5px; padding-bottom: 0px; padding-left: 8px;'>
+              <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
+                <td style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0; padding-top: 5px; padding-bottom: 0px; padding-left: 8px;'>
                   <table align='left' border='0' celpadding='0' celspacing='0' style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
-                    <tr style='border-collapse: collapse; border-spacing: 0; margin: 0;'>
+                    <tr style='border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;  border-spacing: 0; margin: 0;'>
                       <td align='left' style='padding-right: 5px;  border-collapse: collapse; border-spacing: 0; margin: 0;'>
                         <a href='https://www.facebook.com/roarmedia11/' title='Visit our Facebook'>
                           <img alt='' height='24' src='https://roarmedia.com/wp-content/uploads/2019/09/rmemailico-facebook.png' style='border: none;' width='24' alt="Icon for Facebook">
